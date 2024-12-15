@@ -1,0 +1,52 @@
+body.light-mode {
+    background: linear-gradient(to bottom right, #495057, #bdbaba);
+    color: #000;
+}
+
+body.dark-mode {
+    background: linear-gradient(to bottom right, #212529, #343a40);
+    color: #f8f9fa;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: var(--card-bg, #f8f9fa);
+}
+
+#result {
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--input-bg, #e9ecef);
+    color: var(--input-color, #495057);
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border-width: 2px;
+}
+
+.btn-light {
+    background-color: var(--btn-light-bg, #fff);
+    border-color: var(--btn-light-border, #adb5bd);
+    color: var(--btn-light-color, #495057);
+}
+
+/* Variables CSS pour basculer facilement entre les modes */
+body.light-mode {
+    --card-bg: #f8f9fa;
+    --input-bg: #e9ecef;
+    --input-color: #495057;
+    --btn-light-bg: #fff;
+    --btn-light-border: #adb5bd;
+    --btn-light-color: #495057;
+}
+
+body.dark-mode {
+    --card-bg: #343a40;
+    --input-bg: #495057;
+    --input-color: #f8f9fa;
+    --btn-light-bg: #495057;
+    --btn-light-border: #6c757d;
+    --btn-light-color: #f8f9fa;
+}
